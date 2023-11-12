@@ -25,4 +25,18 @@ public class Scoreboard {
         }
     }
 
+    public GameEntry removeEntry(int index) throws IndexOutOfBoundsException {
+        if (index < 0 || index >= numEntries) throw new IndexOutOfBoundsException("Invalid index: " + index);
+
+        GameEntry temporary = board[index];
+
+        for (int indexToIterate = index; indexToIterate < numEntries - 1; indexToIterate++)
+            board[indexToIterate] = board[indexToIterate + 1];
+
+        board[numEntries - 1] = null;
+        numEntries--;
+
+        return temporary;
+    }
+
 }
