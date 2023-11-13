@@ -39,4 +39,7 @@ public class Scoreboard {
         return temporary;
     }
 
+    public GameEntry[] getBoard() {
+        return board;
+    }
 }
