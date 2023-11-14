@@ -1,5 +1,7 @@
 package linkedLists;
 
+import java.util.Objects;
+
 public class SinglyLinkedList<T> {
     private Node<T> head = null;
     private Node<T> tail = null;
@@ -81,6 +83,27 @@ public class SinglyLinkedList<T> {
 
         return nodeRemoved.getElement();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) return true;
+
+        SinglyLinkedList<?> that = (SinglyLinkedList<?>) o;
+        if (that.getSize() != size) return false;
+
+        Node<?> walkA = head;
+        Node<?> walkB = that.head;
+
+        while (walkA != null) {
+            if (!walkA.getElement().equals(walkB.getElement())) return false;
+            walkA = walkA.getNext();
+            walkB = walkB.getNext();
+        }
+
+        return true;
+    }
+
 
 
     private static class Node<T> {
