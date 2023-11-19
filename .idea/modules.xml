@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/fundamentals/fundamentals.iml" filepath="$PROJECT_DIR$/fundamentals/fundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-roadmap.iml" filepath="$PROJECT_DIR$/.idea/java-roadmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-structures/linked-lists/linked-lists.iml" filepath="$PROJECT_DIR$/data-structures/linked-lists/linked-lists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-structures/maps-hashtables-skiplists/maps-hashtables-skiplists.iml" filepath="$PROJECT_DIR$/data-structures/maps-hashtables-skiplists/maps-hashtables-skiplists.iml" />
       <module fileurl="file://$PROJECT_DIR$/fundamentals/working-with-files/working-with-files.iml" filepath="$PROJECT_DIR$/fundamentals/working-with-files/working-with-files.iml" />
     </modules>
   </component>
